@@ -34,5 +34,4 @@ def handler(event):
     img_b64 = base64.b64encode(buf.getvalue()).decode()
     return {"image_base64": img_b64, "seed": seed, "width": width, "height": height}
 
-
 runpod.serverless.start({"handler": handler})
